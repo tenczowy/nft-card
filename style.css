@@ -1,0 +1,122 @@
+:root{
+    --clr-soft-blue: hsl(215, 51%, 70%);
+    --clr-cyan: hsl(178, 100%, 50%);
+
+    --clr-main-bg: hsl(217, 54%, 11%);
+    --clr-shadow: hsl(216, 53%, 7%);
+    --clr-card-bg: hsl(216, 50%, 16%);
+    --clr-line: hsl(215, 32%, 27%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --fs-neutral: 18px;
+    --ff-sans-serif: 'Outfit', sans-serif;
+
+    --fw-light-300: 300;
+    --fw-regular-400: 400;
+    --fw-bold-600: 600;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-sans-serif);
+    font-size: var(--fs-neutral);
+    color: var(--clr-soft-blue);
+    line-height: 1.5rem;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    border-radius: 0.5rem;;
+}
+
+#user-avatar{
+    width: 2rem;
+    border: 1px solid white;
+    margin-right: 1rem;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--clr-main-bg);
+}
+
+.nft-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    background-color: var(--clr-card-bg);
+    border-radius: 0.85rem;
+    padding: 1.35rem;
+    filter: drop-shadow(0 0 1rem var(--clr-shadow));
+}
+
+h1{
+    font-size: 1.3rem;
+    color: var(--clr-white);
+    font-weight: var(--fw-bold-600);
+    padding: 1rem 0;
+}
+
+.nft-card > p {
+    font-weight: var(--fw-light-300);
+}
+
+.prizing{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.price, .deadline{
+    display: flex;
+}
+
+#icon-ethereum, #icon-clock{
+    padding-right: 0.6rem;
+    max-height: 1rem;
+    margin-block: auto;
+    
+}
+
+.prizing *{
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.price > p {
+    font-weight: var(--fw-bold-400);
+    color: var(--clr-cyan);
+}
+
+.creator{
+    display: flex;
+    border-top: 1px solid var(--clr-line);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.creator p {
+    font-size: 0.875rem;
+    margin-block: auto;
+}
+
+#user-name{
+    color: var(--clr-white);
+}
+
+#user-avatar{
+    border-radius: 50%;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; background-color: var(--clr-main-bg);}
+.attribution a { color: hsl(228, 45%, 44%); }
